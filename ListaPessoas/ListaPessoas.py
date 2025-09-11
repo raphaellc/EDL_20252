@@ -50,7 +50,28 @@ class ListaPessoas:
                 return True
             no_atual = no_atual.obtemProximo()
         return False
+
+    def removerPessoa(self, nome:str) -> bool:
+        if self.__inicio_lista == None:
+            print("A lista está vazia.")
+            return False
+        no_atual = self.__inicio_lista
+        no_anterior = None
+
+        while no_atual is not None:
+            if no_atual.obtemValor().getNome() == nome:
+                if no_anterior == None:
+                    self.__inicio_lista = no_atual.obtemProximo()
+                    return True
+                else:
+                    no_anterior.defineProximo(no_atual.obtemProximo())
+                    return True
+            no_anterior = no_atual
+            if no_atual != None:
+                no_atual = no_atual.obtemProximo()
+        return False
         
+   
         
 
 
@@ -65,4 +86,13 @@ if __name__ == "__main__":
         print("A pessoa não existe na lista.")
     
     lista.listarValores()
+    lista.removerPessoa("João")
+    lista.listarValores()
+    lista.removerPessoa("Maria")
+    lista.listarValores()
 
+    if lista.removerPessoa("João")
+
+    lista.removerPessoa("Pedro")
+    lista.listarValores()
+    
