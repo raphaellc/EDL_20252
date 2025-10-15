@@ -39,7 +39,7 @@ class Lista:
                 return True
         return False
     
-    def remover(self, valor):
+
 
 
 if __name__ == "__main__":

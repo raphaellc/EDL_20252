@@ -91,7 +91,7 @@ if __name__ == "__main__":
     lista.removerPessoa("Maria")
     lista.listarValores()
 
-    if lista.removerPessoa("João")
+    
 
     lista.removerPessoa("Pedro")
     lista.listarValores()
