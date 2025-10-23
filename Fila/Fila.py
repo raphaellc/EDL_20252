@@ -67,7 +67,7 @@ class Fila:
     
     def desenfileirar(self):
         no_retorno : No = None     
-        if self._qtd_prioridades < 3:
+        if self._qtd_prioridades < 3 and self._tamanho_prioridade > 0:
             if self._inicio_prioridade is None:
                 print("Fila de prioridades vazia")
                 return None
